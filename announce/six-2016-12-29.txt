@@ -1,0 +1,135 @@
+In October we moved GigE and NxGigE members from the Cisco 6509 to a 
+temporary switch loaned to us by Arista.  We are now ready to move those 
+members from the loaner switch to the new Arista 7512R.
+
+The rs3 route server will be migrated, followed by the GigE participants.  
+Then some 10G and 100G participants will be migrated from the Arista 
+7508E, while others will have interruptions due to fiber right-sizing.
+
+The maintenance windows are as follows:
+
+  Thur January  5th from 0800 to 1600 UTC (0000 to 0800 PST)
+  Tues January 10th from 0800 to 1600 UTC (0000 to 0800 PST)
+  Thur January 12th from 0800 to 1600 UTC (0000 to 0800 PST)
+
+Participants (listed below) will see their connectivity to the fabric be 
+interrupted for hopefully less than 20 minutes each.  Peers of these 
+networks may also see interruptions to their sessions with the networks 
+listed.
+
+There will be an attempt to block BGP sessions to/from a given participant 
+prior to interruption, in order to be gentle with non-BGP traffic.
+
+Mitigate your traffic accordingly, but please DO NOT disable link on your 
+circuit as that makes it difficult to determine if the new port/optic are 
+working properly, wasting precious time.
+
+Questions and concerns welcome.
+
+The SIX Crew
+
+---
+Guide to ASN prefix:
+
+x: migration from loaner switch to Arista 7512R
+y: migration from Arista 7508E to Arista 7512R
+z: fiber right-sizing
+
+ASN	IPv4         	IPv6             	Organization
+-----	-------------	-----------------------	--------------------
+z11274	206.81.80.59	2001:504:16::2c0a	Adhost
+z20940	206.81.80.113	2001:504:16::51cc	Akamai Technologies
+y7782	206.81.80.47	2001:504:16::1e66	Alaska Communication
+x33569	206.81.80.142	2001:504:16::8321	All Host Shop
+z6456	206.81.80.10	2001:504:16::1938	Altopia
+x22059	206.81.80.78	2001:504:16::562b	Apvio, Inc.
+x21743	206.81.81.30	2001:504:16::54ef	Atlas Networks
+x62642	206.81.81.73	2001:504:16::f4b2	Bigleaf Networks
+x33011	206.81.81.19	2001:504:16::80f3	Box
+z6509	206.81.80.189	2001:504:16::189:0:196d	CANARIE Inc.
+x35838	206.81.80.200	2001:504:16::8bfe	CCANet Ltd
+y36408	206.81.80.167	2001:504:16::8e38	CDNetworks
+x27400	206.81.80.221	2001:504:16::6b08	Clearfly Communicati
+x40065	206.81.81.37	2001:504:16::9c81	CNSERVERS
+x10557	206.81.80.34	2001:504:16::293d	Connect Northwest
+x58511	206.81.81.108	2001:504:16::e48f	Connectivity I.T.
+x4319	206.81.80.18	2001:504:16::10df	Cortland Electronics
+x31800	206.81.80.101	2001:504:16::7c38	DALnet
+x13739	206.81.80.244	2001:504:16::244:0:35ab	DataCenter IP
+x10848	206.81.80.225	2001:504:16::2a60	Dell Services
+x3361	206.81.80.159	2001:504:16::d21	Digital Fortress
+x12009	206.81.81.49	2001:504:16::2ee9	Eastern Oregon Net, 
+x33005	206.81.80.126	2001:504:16::80ed	Eltopia.com
+x14701	206.81.80.232	2001:504:16::396d	Faction
+x7311	206.81.80.206	2001:504:16::1c8f	Frontier Networks
+x14500	206.81.80.187	2001:504:16::38a4	Galaxybroadband Comm
+z8047	206.81.80.62	2001:504:16::1f6f	GCI
+x22363	206.81.81.46	2001:504:16::575b	Golden Frog GmbH
+z15169	206.81.80.17	2001:504:16::3b41	Google
+x11233	206.81.80.199	2001:504:16::2be1	Gorge Networks
+y6939	206.81.80.40	2001:504:16::1b1b	Hurricane Electric
+z12989	206.81.80.194	2001:504:16::32bd	Highwinds
+x14280	206.81.80.220	2001:504:16::37c8	Hostway Canada
+x26753	206.81.80.27	2001:504:16::6881	In2net Network
+x2044	206.81.80.31	2001:504:16::7fc	Infinity Internet
+x30076	206.81.80.188	2001:504:16::757c	Inland Northwest Hea
+z7385	206.81.80.102	2001:504:16::1cd9	Integra Telecom
+y11537	206.81.80.67	2001:504:16::2d11	Internet2
+x53708	206.81.80.192	2001:504:16::d1cc	iovation
+y18530	206.81.80.79	2001:504:16::4862	ISOMEDIA
+y4766	206.81.80.131	2001:504:16::129e	KT Corp
+z22822	206.81.80.99	2001:504:16::5926	Limelight Networks
+z22822	206.81.81.83	2001:504:16::339:0:5926	Limelight Networks
+x11046	206.81.81.118	2001:504:16::2b26	Little Apple Tech
+x50763	206.81.80.219	2001:504:16::c64b	MCKAYCOM Ltd
+z13331	206.81.80.21	2001:504:16::3413	Metapeer
+x54327	206.81.80.228	2001:504:16::d437	Montana West
+z3601	206.81.80.14	2001:504:16::e11	Mouat's Technology
+x20474	206.81.81.96	2001:504:16::4ffa	NCI Datacom, Inc.
+x19528	206.81.80.160	2001:504:16::4c48	Netriver INT
+y1982	206.81.80.96	2001:504:16::7be	Network OS / Northwe
+x11666	206.81.80.144	2001:504:16::2d92	Nexicom
+x53828	206.81.81.77	2001:504:16::d244	Nitel
+z16713	206.81.80.60	2001:504:16::4149	NoaNet
+x26935	206.81.80.125	2001:504:16::6937	Noel Communications 
+x11385	206.81.81.109	2001:504:16::2c79	noWYR
+z32751	206.81.80.12	2001:504:16::7fef	NuclearFallout
+z30071	206.81.80.212	2001:504:16::7577	OCCAID
+x36692	206.81.80.53	2001:504:16::8f54	OpenDNS
+z39832	206.81.80.198	2001:504:16::9b98	Opera Software
+x3856	206.81.80.81	2001:504:16::f10	Packet Clearing Hous
+x36715	206.81.80.184	2001:504:16::8f6b	PopCap Games
+x6407	206.81.80.74	2001:504:16::1907	Primus Telecommunica
+x30583	206.81.80.210	2001:504:16::7777	Quantum Communicatio
+x3842	206.81.81.12	2001:504:16::f02	RamNode
+y11922	206.81.80.11	2001:504:16::2e92	RealNetworks
+x62838	206.81.81.21	2001:504:16::f576	Reprise Hosting
+z14987	206.81.80.226	2001:504:16::3a8b	Rethem Hosting
+x3130	206.81.80.23	2001:504:16::c3a	RGnet/PSGnet
+x16652	206.81.81.74	2001:504:16::410c	Riseup Networks
+x19518	206.81.80.108	2001:504:16::4c3e	Rock Island Communic
+x21525	206.81.80.196	2001:504:16::5415	Seattle Public Libra
+x3742	206.81.80.16	2001:504:16::e9e	Semaphore Corporatio
+x53837	206.81.80.203	2001:504:16::d24d	ServedBy the Net
+x32869	206.81.80.171	2001:504:16::8065	Silver Star Telecom
+x15211	206.81.81.75	2001:504:16::3b6b	Square
+z36351	206.81.80.140	2001:504:16::8dff	Softlayer
+x19171	206.81.81.15	2001:504:16::4ae3	Stargate Connections
+x15177	206.81.80.195	2001:504:16::3b49	StarTouch
+x1798	206.81.80.177	2001:504:16::706	State of Oregon
+x13871	206.81.80.58	2001:504:16::362f	Telebyte Northwest
+x5071	206.81.80.182	2001:504:16::13cf	TeliPhone Navigata
+x393350	206.81.81.100	2001:504:16::6:86	Teltrust
+x30261	206.81.81.58	2001:504:16::7635	Treasure State Inter
+y4323	206.81.80.64	2001:504:16::10e3	tw telecom
+x19662	206.81.80.141	2001:504:16::4cce	Uniserve Communicati
+x47065	206.81.81.78	2001:504:16::b7d9	USC / UFMG PEERING
+x29834	206.81.81.38	2001:504:16::748a	Ustream
+x18106	206.81.81.60	2001:504:16::46ba	VQBN
+x54523	206.81.81.27	2001:504:16::d4fb	Warm Springs Telecom
+x19116	206.81.81.44	2001:504:16::4aac	Washington Broadband
+x394514	206.81.81.94	2001:504:16::6:512	Wireless Advocates
+x64241	206.81.81.87	2001:504:16::faf1	Wobscale Technologie
+y4258	206.81.80.49	2001:504:16::10a2	Wolfe
+x22702	206.81.81.22	2001:504:16::58ae	X5 Solutions
+z6461	206.81.80.19	2001:504:16::193d	Zayo

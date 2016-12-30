@@ -1,0 +1,20 @@
+ISOMEDIA will performing scheduled network maintenance on 01/19/2017 at
+12:01AM PST to 03:00AM PST. During this window, there will multiple periods
+of increased latency and packet loss, as network protocols re-converge.
+These periods may last between 10 and 30 minutes. 
+
+All times are estimates based on expected outcomes of the work being
+performed and previous experience performing the same or similar work. There
+is always the possibility of some unforeseen bug, or problem, that could
+extend the maintenance time or cause a disruption in connectivity.
+Administrators will make every effort to correct the problem, or implement
+the back out plan quickly, if something does occur.
+
+We apologize for any inconvenience this work may cause. In the event that
+you experience continued disruption after this period please contact
+ISOMEDIA technical support toll free at 1 (877) 638-9277.
+
+Thank you for your continued support.
+
+Sincerely,
+ISOMEDIA
