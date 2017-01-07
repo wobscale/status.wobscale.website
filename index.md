@@ -4,7 +4,7 @@ layout: "default"
 
 ## Upcoming maintenance windows
 
-### Thu 2017-01-05, Tue 2017-01-10, Thu 2017-01-12 from 0800 to 1600 UTC (00:00 to 08:00 Seattle time)
+### Tue 2017-01-10, Thu 2017-01-12 from 0800 to 1600 UTC (00:00 to 08:00 Seattle time)
 
 The Seattle Internet Exchange is moving our port from their Arista loaner switch to the new Arista 7512R. An outage of approximately 20 minutes is expected during one of the above maintenance windows.
 
