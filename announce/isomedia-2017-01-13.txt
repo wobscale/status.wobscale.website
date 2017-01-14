@@ -1,0 +1,16 @@
+ISOMEDIA will be performing maintenance on a UPS you're connected to. This
+maintenance is expected to be non-service affecting. During this maintenance
+your equipment will be placed on bypass power and wont be protected should
+any power events occur during our maintenance. 
+
+This maintenance window is scheduled for Tuesday 2017-01-17 from 07:00AM to
+09:00AM PST
+
+We apologize for any inconvenience this work may cause. In the event that
+you experience continued disruption after this period please contact
+ISOMEDIA technical support toll free at 1 (877) 638-9277.
+
+Thank you for your continued support.
+
+Sincerely,
+ISOMEDIA
