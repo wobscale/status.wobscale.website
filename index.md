@@ -10,8 +10,6 @@ ISOMEDIA is performing UPS maintenance during the above maintenance window.
 
 The maintenance is not expected to affect service. Equipment will be placed on bypass power, but an outage may occur if a power event occurs.
 
-We're awaiting clarification for which UPS is affected as we have multiple colocations with ISOMEDIA.
-
 For more information, [read the outage announcement email](/announce/isomedia-2017-01-13.txt).
 
 ### Thu 2017-01-19 from 0800 to 1100 UTC (00:00 to 03:00 Seattle time)
