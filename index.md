@@ -19,8 +19,8 @@ SIX has requested us to increase our ARP cache timeout for inter-SIX traffic.
 Our router runs OpenBSD, and unfortunately the only way to make this change
 includes recompiling the kernel and rebooting into it.
 
-We're taking the opportunity to also upgrade OpenBSD and possibly apply a patch
-to allow peering with Google.
+We're taking the opportunity to also upgrade OpenBSD and ~~possibly apply a patch
+to allow peering with Google.~~ lol kernel development is hard
 
 ## Past incidents
 
