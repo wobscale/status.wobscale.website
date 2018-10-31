@@ -4,17 +4,12 @@ layout: "default"
 
 ## Upcoming maintenance windows
 
-There are no upcoming maintenance windows.
+### Power maintenance, 2018-11-01 15:00 &ndash; 2018-11-02 00:00 UTC
 
-## Past incidents
+Our colocation provider (IsoFusion) "will be performing routine power maintenance". We expect no impact but recommend against performing critical changes during this time.
 
-### Wobscale.chat downtime (2018-09-05)
+### Cogent transit maintenance window, 2018-11-09 08:00 &ndash; 14:00 UTC
 
-Due to an operator error, the downtime planned for wobscale.chat did not occur. The [&nbsp;Ｃｒｉｔｉｃａｌ Ｓｅｃｕｒｉｔｙ Ｕｐｄａｔｅ&nbsp;](https://matrix.org/blog/2018/09/06/critical-security-update-synapse-0-33-3-1/) was applied a few short hours after release, and we have no evidence the security of any Wobscale users was impacted by those specific vulnerabilities.
+Our backup transit provider (Cogent) "will be doing upgrades to their core routing devices" in the Seattle metro area. We expect no impact but recommend against performing critical changes during this time.
 
-### Router update (2018-08-14)
-
-SIX requested we apply an ARP configuration change to our router. Since this required rebooting anyways, we also updated OpenBSD.
-
-The operation went off with no unexpected difficulties, resulting in around 10
-minutes of network downtime as the router rebooted.
+Cogent is our lowest-preference route in our router and is AS-prefixed 3 times on our route announcements. Traffic previously transiting via Cogent will almost certainly transit over Hurricane Electric during the maintenance.
