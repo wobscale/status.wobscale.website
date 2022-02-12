@@ -2,7 +2,9 @@
 layout: "default"
 ---
 
-## Significant packet loss, starting 2021-02-08
+## System status
+
+### Significant packet loss, starting 2021-02-08
 
 Wob engineers have been debugging a significant packet loss issue that we noticed starting Tuesday, February 8.
 
